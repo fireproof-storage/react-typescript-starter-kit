@@ -6,6 +6,7 @@ import {
 import { useFireproof } from 'use-fireproof'
 import { Items } from '../components/Items'
 import { InlineEditor } from '../components/InlineEditor'
+import { MagneticPoem } from '../components/MagneticPoem'
 
 export type TopicDoc = {
   _id?: string
@@ -61,7 +62,7 @@ export function Topic() {
         setIsEditing={setIsEditing}
       />
 
-
+      <MagneticPoem></MagneticPoem>
 
       <Items topicId={id!} />
     </div>

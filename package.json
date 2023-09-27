@@ -11,10 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
     "react-router-dom": "^6.16.0",
-    "@types/react-router-dom": "^5.3.3",
     "use-fireproof": "^0.13.3"
   },
   "devDependencies": {
