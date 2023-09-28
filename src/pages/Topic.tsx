@@ -28,6 +28,10 @@ export function Topic() {
   const topics = useLiveQuery('_id', { key: id })
   const [topic] = topics.docs as TopicDoc[]
 
+  database.changes().then((changes) => {
+    console.log('changes', changes)
+  })
+  
   return (
     <div>
       <div className="flex justify-between items-center mb-2">
@@ -62,7 +66,7 @@ export function Topic() {
         setIsEditing={setIsEditing}
       />
 
-      <MagneticPoem></MagneticPoem>
+      <MagneticPoem topic={topic}></MagneticPoem>
 
       <Items topicId={id!} />
     </div>

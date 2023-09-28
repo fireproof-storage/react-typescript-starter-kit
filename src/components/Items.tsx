@@ -22,7 +22,7 @@ export function Items({ topicId }: { topicId: string }) {
 
   const items = useLiveQuery(
     (doc, emit) => {
-      if (doc.type === 'item') {
+      if (doc.type === 'poem') {
         emit(doc.topicId)
       }
     },
